@@ -1,1 +1,3 @@
-# neoG Level One - Build
+# neoG Level One
+
+Build Logic Exercises and weekly exercises
