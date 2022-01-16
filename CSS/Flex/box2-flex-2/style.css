@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  height: 400px;
+  gap: 30px;
+  max-width:950px;
+  margin: 50px auto
+}
+
+.cont-1 {
+  background-color: gray;
+  width: 250px;
+  padding:20px;
+}
+
+.cont-2 {
+  background-color: gainsboro;
+  flex-grow: 1;
+  padding:20px;
+}

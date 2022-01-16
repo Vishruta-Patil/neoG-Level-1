@@ -1,0 +1,46 @@
+/* Vikram's Approach */
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 8px;
+    background: blueviolet;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .header__nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header__nav li {
+    display: inline-block;
+  }
+  .header__nav a {
+    padding: 8px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  .user .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: pink;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  

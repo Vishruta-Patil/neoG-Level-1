@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans";
+  background: #edf2f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 950px;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+form {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+button {
+  background: #1a6ccc;
+  color: #fff;
+  border-radius: 50px;
+  border: 0;
+  font-size: 16px;
+  padding: 4px 16px;
+}
+
+input {
+  flex-grow: 1;
+  border: 2px solid #e2e2e2;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 12px;
+}

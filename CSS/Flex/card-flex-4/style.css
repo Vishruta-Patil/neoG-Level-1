@@ -1,0 +1,46 @@
+body {
+  background-color: grey;
+  color: white;
+}
+
+.hero-container {
+  background-color: hotpink;
+  /* padding: 0 10px 10px; */
+  max-width: 400px;
+}
+
+.header {
+  display: flex;
+  padding: 0px 10px; 
+}
+
+.card-title {
+  padding-bottom: 0px;
+}
+
+.card-cross {
+    margin-left: auto
+}
+
+.description {
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid grey;
+    padding: 12px 10px;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    background-color: cadetblue;
+    padding: 9px;
+    color: white;
+    border-radius: 5px;
+}
+ 
