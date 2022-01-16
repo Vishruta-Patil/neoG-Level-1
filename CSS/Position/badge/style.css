@@ -1,0 +1,31 @@
+body {
+    background-color: #ededed;
+  }
+  
+  .msg-img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .no {
+    background-color: blue;
+    padding: 5px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  
+    position: absolute;
+    top: -15px;
+    right: -10px;
+  }
+  
