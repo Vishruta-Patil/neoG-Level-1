@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    margin: 20px;
+    column-gap: 2px
+}
+
+.c-1, .c-2, .c-3 {
+    padding: 20px;
+    height: 400px;
+    flex-grow: 1;
+}
+
+.c-1 {
+    background-color: red;
+    flex-basis: 0%;
+}
+
+.c-2 {
+    background-color: blue;
+    flex-basis: 1%;
+}
+
+.c-3 {
+    background-color: green;
+    flex-basis: 2%;
+}
