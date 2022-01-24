@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  position: relative;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+    color: rgba(0, 0, 0, 0.35)
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+  max-width: 90rem;
+  background-color: rgba(0,0,0,0.3);
+  padding: 3rem;
+  gap: 3.6rem;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+.text-with-badge {
+  position: relative;
+}
+
+.text-with-badge-id {
+  background-color: blue;
+  font-size: 0.8em;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.2em;
+  right: -1.6em;
+}
+
+.large-badge-id {
+  font-size: 1.5em;
+  top: -0.6em;
+  right: -0.8em;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.button-with-badge-left-container {
+  gap: 2rem;
+}
+
+.button-with-badge-left {
+  background-color: blue;
+  color: white;
+}
+
+.toggle-button-with-badge {
+  background-color: white;
+}
+
+.button-with-badge {
+  background-color: hotpink;
+  font-size: 1.2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  top: -1em;
+}
+
+.button-with-badge-left-id {
+  left: -1em;
+}
+
+.toggle-button-with-badge-id {
+  right: -1em;
+}
+
+.material-icons {
+    font-size: 5em;
+    position: relative;
+}
+
+.icon-badge {
+    font-size: 0.3em;
+    background-color: red;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.4em;
+    right:-0.35em;
+    color: white;
+}
