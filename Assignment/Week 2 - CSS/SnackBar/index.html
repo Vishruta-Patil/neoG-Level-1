@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="button-section">
+        <button class="btn baseline-btn">Baseline</button>
+        <button class="btn leading-btn">Leading</button>
+        <button class="btn stacked-btn">Stacked</button>
+      </div>
+
+      <div class="snackbar-section">
+        <div class="snackbar snackbar-align">
+          <p class="snackbar-content-1">Can't send photo. Retry in 5 seconds</p>
+          <p class="snackbar-content-2">RETRY</p>
+          <button class="snackbar-close-btn">X</button>
+        </div>
+        <div class="snackbar snackbar-stack">
+          <p class="snackbar-content-1">
+            This item already has the label "travel". You can add a new label.
+          </p>
+          <div class="snackbar-stack-inner">
+            <p class="snackbar-content-2">ADD A NEW LABEL</p>
+            <button class="snackbar-close-btn snackbar-stack-close-btn">
+              X
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
