@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-container">
+        <button class="btn alert-dialog-btn">Open Alert Dialog Box</button>
+        <button class="btn basic-dialog-btn">Basic Dialog Box</button>
+        <button class="btn confirmation-dialog-btn">
+          Open Confirmation Dialog Box
+        </button>
+      </div>
+      <div class="dialog-container flex-container ">
+        <div id="alert-dialog" class="dialog-box hide-container">
+          <h2 class="dialog-header alert-dialog-header">Discard Draft?</h2>
+          <div class="dialog-btn-container">
+            <button class="no-outline-btn">Cancel</button>
+            <button class="no-outline-btn">Discard</button>
+          </div>
+        </div>
+
+        <div id="basic-dialog" class="dialog-box hide-container">
+          <p class="dialog-header">Set backup account</p>
+          <div class="user-profile-container">
+            <div class="user-profile">
+              <div class="user-avtar">
+                <img class="user-img rectangle-img" src="img.jpg" />
+                <p class="user-email-address">user01@gmail.com</p>
+              </div>
+              <div class="user-avtar">
+                <img class="user-img" src="vishruta.jpeg" />
+                <p class="user-email-address">user02@gmail.com</p>
+              </div>
+              <div class="user-avtar">
+                <span class="add-user-icon material-icons"> add_circle </span>
+                <p class="user-email-address">Add Account</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="confirmation-dialog" class="dialog-box rectangle-box hide-container">
+          <p class="dialog-header header-confirmation-dialog">Phone ringtone</p>
+          <hr class="hr-line">
+          <div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="none" /> 
+              <label for="none">None</label>
+            </div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="physics" />
+              <label for="physics">Physics</label> 
+            </div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="chemistry" />
+              <label for="chemistry">Chemistry</label> 
+            </div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="chemistry" />
+              <label for="chemistry">Chemistry</label> 
+            </div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="chemistry" />
+              <label for="chemistry">Chemistry</label> 
+            </div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="chemistry" />
+              <label for="chemistry">Chemistry</label> 
+            </div>
+            <div class="input-confirmation-dialog">
+              <input type="radio" id="maths" /> <label for="maths">Maths</label>
+            </div>
+          </div>
+          <div class="dialog-btn-container confirmation-dialog-btn-container">
+            <button class="no-outline-btn">Cancel</button>
+            <button class="no-outline-btn">Discard</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
