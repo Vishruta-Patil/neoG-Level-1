@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            display:none;
+        }
+        .content.active {
+            display: block;
+        }
+        .tab.active {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs-container">
+            <button class="tab active" data-id="content-1">Tab1</button>
+            <button class="tab" data-id="content-2">Tab2</button>
+            <button class="tab" data-id="content-3">Tab3</button>
+        </div>
+
+        <div class="content-container">
+            <div class="content active" id="content-1">tab1 content</div>
+            <div class="content" id="content-2">tab2 content</div>
+            <div class="content" id="content-3">tab3 content</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
