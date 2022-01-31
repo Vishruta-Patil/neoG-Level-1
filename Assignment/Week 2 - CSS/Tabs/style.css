@@ -10,3 +10,65 @@
 html {
   font-size: 62.5%;
 }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap:12rem;
+  /* margin:5rem; */
+}
+
+.content, .scrollable-content {
+  display:none;
+}
+.content.active, .scrollable-content.active {
+  display: block;
+}
+
+.tab.active, .scrollable-tab.active {
+  color:red;
+  border-bottom: 3px solid red;
+}
+
+
+.tabs-container  {
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.tab, .scrollable-tab {
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border:none;
+  background-color: transparent;
+  outline:none;
+}
+
+.tab:hover {
+  opacity: 0.5;
+}
+
+.content-container, .content-scrollable-container {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+
+
+/* scrollable tabs  */
+.scrollable-tabs-container {
+  overflow: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem 3rem
+}
+
+.scrollable-tabs-container::-webkit-scrollbar{
+  width: 0;
+}
+

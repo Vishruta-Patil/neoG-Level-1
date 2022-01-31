@@ -98,3 +98,8 @@ html {
   max-width:50rem;
   margin-top:3.5rem;
 }
+
+.delete-icon {
+  color:pink;
+  cursor: pointer;
+}

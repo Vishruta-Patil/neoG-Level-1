@@ -8,7 +8,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;    
+  /* 62.5% */
 }
 
 .card-layout {
@@ -26,7 +27,7 @@ html {
   background-color: white;
   width: 35rem;
   border-radius: 7px;
-  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card-description {

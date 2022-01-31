@@ -60,6 +60,7 @@ html {
   gap: 2rem;
   margin-bottom: 1.5rem;
   padding: 0.7rem;
+  cursor: pointer;
 }
 
 .inner-container-drawer:last-child {
@@ -75,16 +76,16 @@ html {
   display:none;
 }
 
-.active {
+.inner-container-drawer.active {
     background-color: rgba(138, 43, 226, 0.2);
     border-radius: 5px;
   }
 
-.active .drawer-menu-icon {
+.inner-container-drawer.active .drawer-menu-icon {
     color: blueviolet;
 }
 
-.active .menu-text-drawer {
+.inner-container-drawer.active .menu-text-drawer {
     color: blueviolet;
 }
 
@@ -186,7 +187,7 @@ html {
 
 .modal-drawer-container {
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .side-modal-drawer {
@@ -195,4 +196,20 @@ html {
   left: 0;
   z-index: 1;
   background-color:white;
+}
+
+.modal-side-drawer {
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.modal-drawer-container {
+  position: relative;
+  grid-template-columns: 1fr;
+} 
+
+.hide-modal-drawer {
+  display: none;
 }

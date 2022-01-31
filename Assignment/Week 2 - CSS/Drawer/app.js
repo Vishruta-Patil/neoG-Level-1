@@ -7,9 +7,13 @@ const sideDissmisibleDrawer = document.querySelector(
 );
 
 const modalMenuBtn = document.querySelector(".modal-menu-btn");
-const sideModalDrawer = document.querySelector("#side-modal-drawer");
-
-// const hello = document.querySelector(".menu-btn")
+const modalSideDrawer = document.querySelector(".modal-side-drawer");
+const heroContainer = document.querySelector(".hero-container");
+const innerContainerDrawer = document.querySelectorAll(
+  ".inner-container-drawer"
+);
+const modalDrawerContainer = document.querySelector(".modal-drawer-container");
+const contentsDrawer = document.querySelector(".contents-drawer");
 
 dissmisibleMenuBtn.addEventListener("click", () => {
   if (sideDissmisibleDrawer.classList.contains("hide-container")) {
@@ -17,17 +21,24 @@ dissmisibleMenuBtn.addEventListener("click", () => {
     sideDissmisibleDrawer.classList.remove("hide-container");
   } else {
     permanentDrawerContainer.classList.add("dissmisible-drawer-container");
-    sideDissmisibleDrawer.classList.add("hide-container")
+    sideDissmisibleDrawer.classList.add("hide-container");
   }
 });
 
-modalMenuBtn.addEventListener('click', () => {
-  console.log("modal")
-  sideModalDrawer.classList.remove("hide-container")
-})
 
+modalDrawerContainer.addEventListener("click", (e) => {
+  if (e.target.id === "modal-btn") {
+    modalSideDrawer.classList.remove("hide-modal-drawer");
+  } else if (e.target.id != "shree-krishna") {
+    modalSideDrawer.classList.add("hide-modal-drawer");
+  }
+});
 
+const activeEventHandler = (e) => {
+  innerContainerDrawer.forEach((unit) => {
+    unit.classList.remove("active");
+    e.target.classList.add("active");
+  });
+};
 
-// hello.addEventListener('click', ()=> {
-//   alert("clicked on new modal")
-// })
+heroContainer.addEventListener("click", activeEventHandler);
